@@ -21,8 +21,8 @@ const services = [
   },
   {
     title: 'Problem Solving',
-    Description: "To help you solve a specific code problem, I will need a bit more detail. Could you share the exact issue you're facing with your code?For example, if you're having trouble with an API call, a React component, or routing in your app, please provide the relevant code or error message, and I'll walk you through the solution.",
-    icon: 'https://i.ibb.co.com/3NXn7kb/images-4.jpg', // Replace with your own icon or image
+    Description: 'To help you solve a specific code problem, I will need a bit more detail. Could you share the exact issue  facing with your code?For example, if your having trouble with an API call, a React component, or routing in your app, please provide the relevant code or error message, and I will walk you through the solution',
+    icon: 'https://i.ibb.co.com/3NXn7kb/images-4.jpg', 
     animation: 'animate__fadeInUp', // Animation class (using animate.css library)
   },
 ];
