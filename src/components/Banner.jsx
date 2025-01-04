@@ -8,7 +8,7 @@ const Banner = () => {
     <section className="bg-gradient-to-r from-black via-purple-700 to-black flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-10 md:py-20 min-h-screen">
       {/* Left Section */}
       <motion.div
-        className="md:w-1/2 space-y-6 text-center md:text-left"
+        className="md:w-1/2 space-y-6 text-center lg:ml-24 md:text-left"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}

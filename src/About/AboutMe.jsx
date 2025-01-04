@@ -129,7 +129,7 @@ const AboutMe = () => {
               and sparks new ideas.
             </p>
             <p className="text-gray-600">
-              Additionally, I enjoy playing football. There’s something
+              Additionally, I enjoy traveling. There’s something
               refreshing about sports that helps me stay energized. I believe
               it’s crucial for a programmer to stay both physically and mentally
               healthy, as it enhances creativity and productivity at work.

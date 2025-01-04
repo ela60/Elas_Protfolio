@@ -20,8 +20,8 @@ const services = [
     animation: 'animate__fadeInUp', // Animation class (using animate.css library)
   },
   {
-    title: 'Problem Silving',
-    description: 'I specialize in identifying user challenges and crafting tailored solutions. My approach combines creativity with analytical thinking to solve complex design problems, ensuring a seamless and enjoyable user experience.',
+    title: 'Problem Solving',
+    Description: "To help you solve a specific code problem, I will need a bit more detail. Could you share the exact issue you're facing with your code?For example, if you're having trouble with an API call, a React component, or routing in your app, please provide the relevant code or error message, and I'll walk you through the solution.",
     icon: 'https://i.ibb.co.com/3NXn7kb/images-4.jpg', // Replace with your own icon or image
     animation: 'animate__fadeInUp', // Animation class (using animate.css library)
   },

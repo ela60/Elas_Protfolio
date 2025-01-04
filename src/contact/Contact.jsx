@@ -8,7 +8,7 @@ const Contact = () => {
     e.preventDefault();
 
     // Basic form validation
-    const email = form.current.user_email.value;
+    const email = form.current.from_email.value;
     const message = form.current.message.value;
 
     if (!email || !message) {
@@ -18,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_3h9pne9", // Your service ID
-        "template_w8af4gl", // Your template ID
+        "service_h97h8il",
+        "template_w8af4gl",
         form.current,
-        "bYXVIuDz3ImmMrSJS" // Your user ID (API key)
+        "bYXVIuDz3ImmMrSJS"
       )
       .then(
         (result) => {
@@ -41,7 +41,9 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-col lg:flex-row items-center justify-between space-y-8 md:space-y-0">
         {/* Left Side: Social Links */}
         <div className="md:w-1/3 text-center md:text-left space-y-6">
-          <h2 className="text-3xl font-bold text-white text-nowrap">Connect with Me</h2>
+          <h2 className="text-3xl font-bold text-white text-nowrap">
+            Connect with Me
+          </h2>
           <div className="flex justify-center md:justify-start space-x-6">
             {/* Social Links */}
             <a
@@ -77,7 +79,7 @@ const Contact = () => {
               <i className="fab fa-twitter"></i>
             </a>
             <a
-              href="https://web.whatsapp.com/"
+              href="https://wa.me/8801682239684" // Your Bangladesh phone number
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-green-500 text-3xl transition-all duration-300"
@@ -89,7 +91,9 @@ const Contact = () => {
 
         {/* Right Side: Email.js Form */}
         <div className="md:w-2/3 bg-white shadow-xl rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Send Me a Message</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            Send Me a Message
+          </h2>
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             {/* Email Input */}
             <div>
@@ -101,8 +105,8 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                name="user_email"
-                id="user_email"
+                name="from_email"
+                id="from_email"
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:outline-none"
                 placeholder="Your Email Address"
