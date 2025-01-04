@@ -1,7 +1,7 @@
 import React from "react";
 import { FaYoutube, FaBeer, FaLaptopCode, FaCalculator } from "react-icons/fa";
 import { motion } from "framer-motion"; // For animations
-import img from "../assets/IMG-20240301-WA0013.jpg";
+import img from "../assets/blog.jpg";
 import { Link } from "react-router-dom";
 
 const AboutMe = () => {
@@ -67,7 +67,7 @@ const AboutMe = () => {
               My personality is a blend of curiosity and humor. I always try to
               look at the lighter side of things, even in tough situations. My
               friends describe me as mischievous, always ready for a fun
-              challenge!
+              challenge!I love <span className="text-blue-600 font-bold">traveling</span> and exploring new places.
             </p>
           </motion.div>
 

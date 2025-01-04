@@ -1,59 +1,57 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const handleHireMeClick = () => {
     alert("Thank you for considering hiring me!");
   };
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Left: Name */}
         <div className="text-2xl font-bold">
-  <Link to="/" className="flex items-center space-x-2 hover:text-teal-600 transition-all duration-300">
-    <span className="text-teal-500">Ambia</span>
-    <span className="text-white">Ela</span>
-  </Link>
-</div>
-
-
-        {/* Middle: Menu Links */}
-        <div className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-teal-400">
-            Home
-          </Link>
-          <Link to="/about" className="hover:text-teal-400">
-            About
-          </Link>
-          <Link to="/services" className="hover:text-teal-400">
-            Services
-          </Link>
-          <Link to="/projects" className="hover:text-teal-400">
-            Projects
-          </Link>
-          <Link to="/blog" className="hover:text-teal-400">
-            Blog
-          </Link>
-          <Link to="/contact" className="hover:text-teal-400">
-            Contact
+          <Link
+            to="/"
+            className="flex items-center space-x-2 hover:text-teal-600 transition-all duration-300"
+          >
+            <span className="text-teal-500">Ambia</span>
+            <span className="text-white">Ela</span>
           </Link>
         </div>
 
-        
-        <button
-          onClick={handleHireMeClick}
-          className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-medium"
-        >
-           <Link
+        {/* Middle: Menu Links */}
+        <div className="hidden md:flex space-x-6">
+          {["/", "/about", "/services", "/projects", "/blog", "/contact"].map(
+            (path, index) => (
+              <Link
+                key={index}
+                to={path}
+                className={`hover:text-teal-400 ${
+                  isActive(path) ? "text-teal-400 font-semibold" : ""
+                }`}
+              >
+                {path === "/"
+                  ? "Home"
+                  : path.charAt(1).toUpperCase() + path.slice(2)}
+              </Link>
+            )
+          )}
+        </div>
+
+        {/* Hire Me Button */}
+        <Link
           to="/contact"
+          onClick={handleHireMeClick}
           className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-medium"
         >
           Hire Me
         </Link>
-        </button>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -72,24 +70,21 @@ const Navbar = () => {
         className={`md:hidden bg-gray-800 ${menuOpen ? "block" : "hidden"}`}
       >
         <div className="flex flex-col space-y-4 px-6 py-4">
-          <Link to="/" className="hover:text-teal-400">
-            Home
-          </Link>
-          <Link to="/about" className="hover:text-teal-400">
-            About
-          </Link>
-          <Link to="/services" className="hover:text-teal-400">
-            Services
-          </Link>
-          <Link to="/projects" className="hover:text-teal-400">
-            Projects
-          </Link>
-          <Link to="/blog" className="hover:text-teal-400">
-            Blog
-          </Link>
-          <Link to="/contact" className="hover:text-teal-400">
-            Contact
-          </Link>
+          {["/", "/about", "/services", "/projects", "/blog", "/contact"].map(
+            (path, index) => (
+              <Link
+                key={index}
+                to={path}
+                className={`hover:text-teal-400 ${
+                  isActive(path) ? "text-teal-400 font-semibold" : ""
+                }`}
+              >
+                {path === "/"
+                  ? "Home"
+                  : path.charAt(1).toUpperCase() + path.slice(2)}
+              </Link>
+            )
+          )}
         </div>
       </div>
     </nav>
