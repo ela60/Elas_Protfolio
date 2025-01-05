@@ -5,6 +5,21 @@ import image from "../assets/WhatsApp Image 2024-10-11 at 9.45.47 PM.jpeg";
 import cv from "../assets/Resume of Ambia Khatun (1).pdf";
 
 const Banner = () => {
+  const title = "Frontend Developer";
+
+  // Animation variants for letters
+  const letterVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i *.1, // Delay between letters
+        duration: 0.5,
+      },
+    }),
+  };
+
   return (
     <Parallax
       bgImage="https://source.unsplash.com/1920x1080/?technology,gradient"
@@ -19,8 +34,19 @@ const Banner = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">
-            Frontend Developer
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight flex">
+            {title.split("").map((letter, index) => (
+              <motion.span
+                key={index}
+                custom={index}
+                initial="hidden"
+                animate="visible"
+                variants={letterVariants}
+                className="inline-block"
+              >
+                {letter === " " ? "\u00A0" : letter} {/* Handle spaces */}
+              </motion.span>
+            ))}
           </h1>
           <p className="text-gray-200 text-lg md:text-xl mb-4">
             Passionate about creating engaging, efficient, and beautiful user

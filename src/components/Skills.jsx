@@ -1,28 +1,30 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGit, FaJava, FaPython, FaGithub, FaDatabase, FaCode, FaCodepen, FaCodeBranch, FaCss3 } from "react-icons/fa"; // Importing icons
+import { FaCodeCommit, FaCodeFork, FaPadlet, FaTableList } from "react-icons/fa6";
 
 const skills = {
   Frontend: [
-    { name: "HTML", proficiency: 98 },
-    { name: "CSS", proficiency: 95 },
-    { name: "JavaScript", proficiency: 90 },
-    { name: "React", proficiency: 85 },
-    { name: "Tailwind CSS", proficiency: 98 },
+    { name: "HTML", proficiency: 98, icon: <FaHtml5 /> },
+    { name: "CSS", proficiency: 95, icon: <FaCss3Alt /> },
+    { name: "JavaScript", proficiency: 90, icon: <FaJsSquare /> },
+    { name: "React", proficiency: 85, icon: <FaReact /> },
+    { name: "Tailwind CSS", proficiency: 98, icon: <FaCss3 /> }, // Using CSS icon for Tailwind
   ],
   Backend: [
-    { name: "Node.js", proficiency: 78 },
-    { name: "Express.js", proficiency: 85 },
-    { name: "MongoDB", proficiency: 90 },
-    { name: "REST API", proficiency: 85 },
-    { name: "Java", proficiency: 85 },
-    { name: "Python", proficiency: 80 },
+    { name: "Node.js", proficiency: 78, icon: <FaNodeJs /> },
+    { name: "Express.js", proficiency: 85, icon: <FaNodeJs /> }, // Using Node.js icon for Express.js
+    { name: "MongoDB", proficiency: 90, icon: <FaDatabase /> }, // Can be replaced with another icon or custom one
+    { name: "REST API", proficiency: 85, icon: <FaGithub /> }, // API icon or similar
+    { name: "Java", proficiency: 85, icon: <FaJava /> },
+    { name: "Python", proficiency: 80, icon: <FaPython /> },
   ],
   Tools: [
-    { name: "Git & GitHub", proficiency: 95 },
-    { name: "VS Code", proficiency: 90 },
-    { name: "Postman", proficiency: 80 },
-    { name: "Figma", proficiency: 80 },
-    { name: "SQA Testing Tools", proficiency: 75 },
+    { name: "Git & GitHub", proficiency: 95, icon: <FaGithub /> },
+    { name: "VS Code", proficiency: 90, icon: <FaCode /> }, // Can replace with a VS Code icon if available
+    { name: "Postman", proficiency: 80, icon: <FaPadlet /> }, // Or find a custom Postman icon
+    { name: "Figma", proficiency: 80, icon: <FaCodepen /> }, // Figma icon
+    { name: "SQA Testing Tools", proficiency: 75, icon: <FaTableList /> }, // A relevant icon for testing tools
   ],
 };
 
@@ -56,7 +58,10 @@ const Skills = () => {
               <div>
                 {skills[category].map((skill, index) => (
                   <div key={index} className="mb-4">
-                    <p className="text-gray-600">{skill.name}</p>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-teal-500">{skill.icon}</span> {/* Displaying the icon */}
+                      <p className="text-gray-600">{skill.name}</p>
+                    </div>
                     <div className="w-full bg-gray-200 rounded-full h-4">
                       <motion.div
                         className="bg-teal-500 h-4 rounded-full"
@@ -110,20 +115,8 @@ const Skills = () => {
               >
                 View Details
               </button>
-                      </div>
-                      <div className="w-full sm:w-1/2 md:w-1/3 bg-white rounded-lg shadow-md p-4">
-              <h4 className="text-xl font-semibold text-teal-600 mb-2">Challenges</h4>
-              <p className="text-gray-700">
-                The biggest challenge was ensuring real-time updates to the database while minimizing latency. Through
-                multithreading and proper indexing, I achieved significant performance improvements.
-              </p>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/3 bg-white rounded-lg shadow-md p-4">
-              <h4 className="text-xl font-semibold text-teal-600 mb-2">Future Improvements</h4>
-              <p className="text-gray-700">
-                Adding a web-based frontend using React or Angular for easier access across devices.
-              </p>
-            </div>
+            {/* More sections */}
           </div>
         </div>
       </div>
@@ -140,10 +133,9 @@ const Skills = () => {
                 and generate reports for librarians. The project showcases my proficiency in Java, object-oriented programming,
                 and database integration.
               </p>
-            {/* <h4 className="font-semibold text-gray-700 mb-2">Key Features:</h4> */}
             <div className="mt-4">
-                          <a className="underline mt-8 text-teal-600 font-bold" href="https://github.com/ela60/Software-Quality-Assurance-SQA-.git">Github Links</a>
-                          </div>
+              <a className="underline mt-8 text-teal-600 font-bold" href="https://github.com/ela60/Software-Quality-Assurance-SQA-.git">Github Links</a>
+            </div>
             <h4 className="font-semibold text-gray-700 mb-2">Challenges:</h4>
             <p className="text-gray-700 mb-4">
               The main challenge was ensuring that the database updates in real time while minimizing latency. I overcame this by using multithreading techniques and optimizing queries.

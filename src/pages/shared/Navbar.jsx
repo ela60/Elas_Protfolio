@@ -14,16 +14,22 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Left: Name */}
-        <div className="text-2xl font-bold">
+       {/* Left: Name */}
+       <div className="text-2xl font-bold">
           <Link
             to="/"
-            className="flex items-center space-x-2 hover:text-teal-600 transition-all duration-300"
+            className="flex items-center space-x-2"
           >
-            <span className="text-teal-500">Ambia</span>
-            <span className="text-white">Ela</span>
+            <span className="text-teal-500">
+              Ambia
+            </span>
+            <span className="text-white animate-slideInOut">Ela</span>
+          
+          {/* Animated "Developer" */}
+          <span className="text-teal-500 hidden md:block animate-slideInOut delay-500">Developer</span>
           </Link>
         </div>
+
 
         {/* Middle: Menu Links */}
         <div className="hidden md:flex space-x-6">
@@ -48,7 +54,7 @@ const Navbar = () => {
         <Link
           to="/contact"
           onClick={handleHireMeClick}
-          className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-medium"
+          className="bg-teal-500 hover:bg-teal-600 text-white md:px-1 md:text-[13px] lg:text-[15px] md:mr-1 md:py-2 lg:px-4 lg:py-2 py-2 px-2 rounded-md font-medium"
         >
           Hire Me
         </Link>
