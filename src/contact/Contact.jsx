@@ -92,7 +92,7 @@ const Contact = () => {
         {/* Right Side: Email.js Form */}
         <div className="md:w-2/3 bg-white shadow-xl rounded-lg p-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Send Me a Message
+          Get in Touch
           </h2>
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             {/* Email Input */}
