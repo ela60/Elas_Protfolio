@@ -71,13 +71,15 @@ const Contact = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://x.com/LabonnoEla047"
+              href="tel:+8801682239684"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 text-3xl transition-all duration-300"
+              className="text-white hover:text-gray-800 text-3xl transition-all duration-300"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fas fa-phone-alt"></i>
             </a>
+
+            
             <a
               href="https://wa.me/8801682239684" // Your Bangladesh phone number
               target="_blank"

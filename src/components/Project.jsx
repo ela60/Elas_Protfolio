@@ -12,34 +12,17 @@ const projects = [
       "ForumApp is an interactive platform that allows users to share their thoughts, engage in discussions, vote on posts, and comment on topics of interest. Whether you’re passionate about a subject or looking to join the conversation, ForumApp provides a space for community interaction.",
     liveLink: "https://bistro-boss-2368b.web.app/",
     githubLink_Client: "https://github.com/ela60/Created-ForumHub-or-Facebook-Website.git",
-    githubLink_Server: "https://github.com/ela60/Created-ForumHub-or-Facebook-Website.git",
+   
     details: `
      🚀 An interactive social platform with admin and user dashboards, inspired by Facebook's UI.
 
-🔹 Overview:
-TalkTrove is a feature-rich social networking dashboard that allows users to post, like, comment, and connect in an intuitive Facebook-style interface. Admins have a separate panel to manage users, content, and platform settings efficiently.
-🖼️ Features:
-👥 User Dashboard
-✅ User Authentication: Sign up/login using email, Google, or Facebook authentication.
-✅ Profile Management: Edit profile, update cover & profile pictures.
-✅ News Feed: View, like, and comment on posts from other users.
-✅ Media Sharing: Upload images, videos, and GIFs.
-✅ Friend System: Send, accept, and decline friend requests.
-✅ Chat System: Real-time messaging with seen/unseen status.
-✅ Notifications: Get notified about likes, comments, and friend requests.
-✅ Dark/Light Mode: Toggle between light and dark themes.
-✅ Post Privacy Settings: Choose between public, friends, or private visibility.
-
-🛠️ Admin Dashboard
-🔹 User Management: View, edit, delete, or ban users.
-🔹 Content Moderation: Approve, edit, or remove posts violating policies.
-🔹 Analytics Dashboard: Monitor user activity, engagement, and trends.
-🔹 Reports & Complaints: Manage flagged posts and handle user complaints.
-🔹 Ad Management: Insert and track advertisements on the platform.
-🔹 Role-Based Access: Assign different permissions to moderators, admins, or users.
+  🔹 Overview:
+  TalkTrove is a feature-rich social networking dashboard that allows users to post, like, comment, and connect in an intuitive Facebook-style interface. Admins have a separate panel to manage users, content, and platform settings efficiently.
 
 
     `,
+     challenges: "Ensuring real-time updates for chats and notifications, optimizing performance for a smooth user experience.",
+    futurePlans: "Enhance UI, integrate AI-based recommendations, and add video-sharing features."
   },
   {
     id: 2,
@@ -50,7 +33,7 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
       "A movie database and recommendation platform where users can explore movies, add them to their favorite list, and get recommendations based on their preferences.",
     liveLink: "https://assignment-10-1d469.web.app/",
     githubLink_Client: "https://github.com/ela60/Movie-Portal-Client.git",
-    githubLink_Server: "https://github.com/ela60/Movie-Portal-Server.git",
+    
     details: `
       - Developed with React for a seamless user experience
       - Utilized Tailwind CSS for a modern and responsive layout
@@ -59,6 +42,8 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
       - Integrated third-party APIs for up-to-date movie information and ratings
       - Deployed on Vercel hosting platform to handle large-scale traffic
     `,
+     challenges: "Implementing a recommendation algorithm and managing API rate limits for fetching movie data.",
+    futurePlans: "Integrate AI-based movie recommendations and implement a user review system."
   },
   {
     id: 3,
@@ -69,7 +54,7 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
       "A platform to share food with others in the community. Users can post available food items for sharing, browse listings, and connect with others to help reduce food waste.",
     liveLink: "https://food-sharing-fde2a.web.app/",
     githubLink_Client: "https://github.com/ela60/Food-Sharing-Website-Client.git",
-    githubLink_Server: "https://github.com/ela60/Food-Sharing-Website-Server.git",
+    
     details: `
       - Built with React for a fast and responsive frontend
       - Utilized Tailwind CSS for custom, mobile-first design
@@ -78,6 +63,9 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
       - Real-time notifications and email integration for users
       - Deployed on Vercel & Firebase hosting platform to handle large-scale traffic
     `,
+    challenges: "Too much problem i faced to user food selected which for various users.",
+    futurePlans: "Add a rating and review system to enhance trust among users . Integrate AI-based food recommendations based on user location and preferences.",
+     
   },
   {
     id: 4,
@@ -86,11 +74,14 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
     technologies: ["React", "Firebase", "Tailwind CSS"],
     description: "An e-commerce platform for gadgets with wishlist and cart features.",
     liveLink: "https://gadgethaven.example.com",
-    githubLink: "https://github.com/username/gadget-haven",
+    githubLink_Client: "https://github.com/ela60/Gadget-Haven-Products-Buy-Websites.git",
     details: `
       Building Gadget Haven was an exciting experience. The main challenge was optimizing the wishlist and cart functionality to sync seamlessly with localStorage.
       Future improvements include advanced filtering options and enhancing the dashboard.
     `,
+    challenges: "Implementing Optimizing performance while handling multiple product categories and filtering options.",
+    futurePlans: "Implement an advanced filtering system for better product search and categorization and Add user authentication to enable saved wishlists and personalized recommendations"
+    
   },
  
   {
@@ -101,7 +92,7 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
     description:
       "A bus ticket booking system for Dublin, built using JavaScript DOM for dynamic content manipulation and Tailwind CSS for styling.",
     liveLink: "https://ela60.github.io/Bus-Ticket-Buying-System-Using-Dom/",
-    githubLink: "https://github.com/ela60/Bus-Ticket-Buying-System-Using-Dom.git",
+    githubLink_Client: "https://github.com/ela60/Bus-Ticket-Buying-System-Using-Dom.git",
     details: `
       - Built using pure JavaScript DOM to manipulate elements and manage ticket bookings
       - Tailwind CSS was used for a responsive and modern design
@@ -109,16 +100,18 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
       - Provides a smooth, interactive user experience with no backend, just front-end logic
       - Deployed on Netlify Pages for easy access and sharing
     `,
+    challenges:"Handling dynamic seat selection and reservation logic using JavaScript DOM.",
+    futurePlans:"Implement payment integration for online ticket purchases.",
   },
   {
     id: 6,
     name: "Peddy Adoption Website",
     image: "https://i.ibb.co/hsv3bHk/heartwarming-moment-between-dog-cat-600nw-2432338827.webp",
-    technologies: ["IoT", "JavaScript", "Tailwind"],
+    technologies: ["JavaScript DOM", "JavaScript", "Tailwind"],
     description:
       "A website designed for pet adoption, integrating IoT concepts to enable pet tracking and adoption functionality. Built with JavaScript for dynamic behavior and Tailwind CSS for styling.",
     liveLink: "https://ela60.github.io/Peddy-Adption-Website/",
-    githubLink: "https://github.com/ela60/Peddy-Adption-Website.git",
+    githubLink_Client: "https://github.com/ela60/Peddy-Adption-Website.git",
     details: `
       - Created a pet adoption website to help users find and adopt pets
       - Implemented IoT features for pet tracking and integration with adoption services
@@ -126,6 +119,8 @@ TalkTrove is a feature-rich social networking dashboard that allows users to pos
       - The website allows users to browse available pets, view details, and submit adoption applications
       - Hosted on GitHub Pages for easy access and sharing
     `,
+    challenges:"I faced the side ber where selected pet show and Designing an intuitive UI that makes pet adoption seamless and engaging.",
+    futurePlans:"Add a real-time chat feature for adopters to connect with pet shelters.",
   },
 ];
 
@@ -135,7 +130,6 @@ const Project = () => {
   return (
     <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto text-center">
-        {/* Animated Heading */}
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold text-white mb-10"
           initial={{ opacity: 0, y: -20 }}
@@ -144,8 +138,6 @@ const Project = () => {
         >
           🚀 My <span className="text-teal-400">Projects</span>
         </motion.h2>
-
-        {/* Project Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project) => (
             <motion.div
@@ -154,22 +146,15 @@ const Project = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Project Image */}
               <img
                 src={project.image}
                 alt={project.name}
                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-md"
               />
-
-              {/* Project Title */}
               <h3 className="text-2xl font-bold text-teal-300">{project.name}</h3>
-
-              {/* Technologies */}
               <p className="text-gray-300 text-sm mt-2">
                 <strong>Technologies:</strong> {project.technologies.join(", ")}
               </p>
-
-              {/* View More Button */}
               <button
                 className="mt-4 w-full bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-all"
                 onClick={() => setSelectedProject(project)}
@@ -180,8 +165,6 @@ const Project = () => {
           ))}
         </div>
       </div>
-
-      {/* Modal for Project Details */}
       <AnimatePresence>
         {selectedProject && (
           <motion.div
@@ -197,11 +180,8 @@ const Project = () => {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Modal Header */}
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-3xl font-bold text-teal-400">
-                  {selectedProject.name}
-                </h2>
+                <h2 className="text-3xl font-bold text-teal-400">{selectedProject.name}</h2>
                 <button
                   className="text-gray-300 hover:text-red-500 text-xl"
                   onClick={() => setSelectedProject(null)}
@@ -209,16 +189,16 @@ const Project = () => {
                   <FaTimes />
                 </button>
               </div>
-
-              {/* Description */}
               <p className="text-gray-300 mb-3">{selectedProject.description}</p>
-
-              {/* Technologies Used */}
               <p className="text-gray-400 mb-3">
                 <strong>Technologies:</strong> {selectedProject.technologies.join(", ")}
               </p>
-
-              {/* Links */}
+              <p className="text-gray-400 mb-3">
+                <strong>Challenges Faced:</strong> {selectedProject.challenges}
+              </p>
+              <p className="text-gray-400 mb-3">
+                <strong>Future Plans:</strong> {selectedProject.futurePlans}
+              </p>
               <div className="flex flex-wrap space-x-4 mt-4 justify-center">
                 <a
                   href={selectedProject.liveLink}
@@ -229,7 +209,6 @@ const Project = () => {
                   <FaExternalLinkAlt />
                   Live Demo
                 </a>
-
                 {selectedProject.githubLink_Client && (
                   <a
                     href={selectedProject.githubLink_Client}
@@ -241,21 +220,7 @@ const Project = () => {
                     GitHub Client
                   </a>
                 )}
-
-                {selectedProject.githubLink_Server && (
-                  <a
-                    href={selectedProject.githubLink_Server}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all"
-                  >
-                    <FaGithub />
-                    GitHub Server
-                  </a>
-                )}
               </div>
-
-              {/* Close Button */}
               <button
                 className="mt-6 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-all w-full"
                 onClick={() => setSelectedProject(null)}
